@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Give me your personal information</h1>
+    <p id="description">Not suspicious</p>
+    <form id="survey-form">
+    <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="kristin chuang">
+    <br>
+    </label>
+    <label for="email" id="email-label">Enter Email: <input id="email" type="email" required placeholder="kc26942@westridge.org">
+    <br>
+    </label>
+    <label for="number" id="number-label">Enter Number: <input id="number" type="number" min="13" max="100" required placeholder="16">
+    <br>
+    </label>
+    <label for="grade" id="grade-label">Grade: <select id="grade">
+      <option value="1">Freshman</option>
+      <option value="2">Sophomore</option>
+      <option value="3">Junior</option>
+      <option value="4">Senior</option>
+    </select>
+    </label>
+    <p>Do you even go to this school?</p>
+    <label>
+      <input id="yes" type="radio" name="school-status" class="inline" value="yes" checked>Yes
+    </label>
+    <label>
+      <input id="no" type="radio" name="school-status" class="inline" value="no">No</label>
+        <p>Which sports?</p>
+  <fieldset>
+    <label for="volleyball">
+      <input class="inline" type="checkbox" value="volleyball" id="volleyball">Volleyball
+    </label>
+    <br>
+    <label for="equestrian">
+      <input class="inline" type="checkbox" value="equestrian" id="equestrian">Equestrian
+    </label>
+    <br>
+    <label for="track-&-field">
+      <input class="inline" type="checkbox" value="track-&-field" id="track-&-field">Track & Field
+    </label>
+  </fieldset>
+  <br>
+  <label for="comments">Any other information or comments?
+    <textarea id="comments" name="comments" cols="30" rows="3" placeholder="my social security number is 123-456-7890">  
+    </textarea>
+  </label>
+  <input id="submit" type="submit" value="Submit">
+  </form>
+  </body>
+</html>

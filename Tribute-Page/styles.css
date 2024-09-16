@@ -1,0 +1,98 @@
+#image{
+    display: block;    
+    height: auto;
+    max-width: 100%;       
+    margin: 0 auto; 
+    object-fit: cover; 
+}
+
+#img-div{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+img[id="link"]{
+    display: block;    
+    height: 60px;
+    width: 200px;       
+    margin: auto; 
+    object-fit: cover; 
+}
+
+#kirby-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#kirby-dancing {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#kirby-text {
+    background: #e0f0ff; 
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#kirby-inhale {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#inhale-text {
+    background: #e0f0ff; 
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    flex: 1;
+}
+
+#kirby-inhale-img {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#playlist-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#kirby-left, #kirby-right {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+
+#scratch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#scratch-left, #scratch-right {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+}

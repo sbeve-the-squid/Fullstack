@@ -1,0 +1,86 @@
+body{
+    background-color: #f2c3d0;
+}
+
+[id="title"]{
+    font-family: fantasy;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0.75px 1px white;
+    line-height: 1;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+p[id="description"]{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10px;
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #a36f85;
+}
+
+form{
+    text-align: center; 
+    background: #faebf9;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+p[id="lactose-intolerance"]{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+fieldset{
+    margin: 1px;
+    border-radius: 20px;
+}
+
+p[id="toppings"]{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+#lactose-intolerance {
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #6b5b66;
+}
+
+input[type="submit"]{
+    display: block;
+    margin-top: 5px; 
+    padding: 5px 10px;
+    background-color: #ffccdd;
+    border-radius: 6px;
+    font-size: 10px;
+    box-shadow: 0 8px 30px rgba(73, 32, 89, 0.2);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff99aa;
+}
+
+.honeycomb{
+    background-color: #e7bd99;
+}
+
+.ketchup{
+    background-color: #811e1e;
+}
+
+.cheetos{
+    background-color: #ca5e37;
+}
+
+.dillpickle{
+    background-color: #89b75c;
+}

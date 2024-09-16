@@ -6,43 +6,44 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Give me your personal information</h1>
-    <p id="description">Not suspicious</p>
+    <h1 id="title">Ice Cream Order</h1>
+    <p id="description">(class ice cream party?!)</p>
     <form id="survey-form">
-    <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="kristin chuang">
+    <label for="name" id="name-label">Your name: <input id="name" type="text" required placeholder="kristin chuang">
     <br>
     </label>
-    <label for="email" id="email-label">Enter Email: <input id="email" type="email" required placeholder="kc26942@westridge.org">
+    <label for="email" id="email-label">Email for confirmation: <input id="email" type="email" required placeholder="kc26942@westridge.org">
     <br>
     </label>
-    <label for="number" id="number-label">Enter Number: <input id="number" type="number" min="13" max="100" required placeholder="16">
+    <label for="number" id="number-label">Scoops: <input id="number" type="number" min=1 max=3 required placeholder="1">
     <br>
     </label>
-    <label for="grade" id="grade-label">Grade: <select id="grade">
-      <option value="1">Freshman</option>
-      <option value="2">Sophomore</option>
-      <option value="3">Junior</option>
-      <option value="4">Senior</option>
+    <label for="dropdown" id="flavor-label">Flavor: <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="honeycomb">Honeycomb</option>
+      <option value="ketchup">Ketchup</option>
+      <option value="cheetos">Cheetos</option>
+      <option value="dillpickle">Dill Pickle</option>
     </select>
     </label>
-    <p>Do you even go to this school?</p>
+    <p id="lactose-intolerance">Lactose Intolerant?</p>
     <label>
-      <input id="yes" type="radio" name="school-status" class="inline" value="yes" checked>Yes
+      <input id="yes" type="radio" name="lactose-intolerance" class="inline" value="yes" >Yes
     </label>
     <label>
-      <input id="no" type="radio" name="school-status" class="inline" value="no">No</label>
-        <p>Which sports?</p>
+      <input id="no" type="radio" name="lactose-intolerance" class="inline" value="no" checked>No</label>
+        <p id="toppings">Which toppings?</p>
   <fieldset>
-    <label for="volleyball">
-      <input class="inline" type="checkbox" value="volleyball" id="volleyball">Volleyball
+    <label for="mochi">
+      <input class="inline" type="checkbox" value="mochi" id="mochi">Mochi
     </label>
     <br>
-    <label for="equestrian">
-      <input class="inline" type="checkbox" value="equestrian" id="equestrian">Equestrian
+    <label for="bacon">
+      <input class="inline" type="checkbox" value="bacon" id="bacon">Bacon
     </label>
     <br>
-    <label for="track-&-field">
-      <input class="inline" type="checkbox" value="track-&-field" id="track-&-field">Track & Field
+    <label for="wasabi-peas">
+      <input class="inline" type="checkbox" value="wasabi-peas" id="wasabi-peas">Wasabi Peas
     </label>
   </fieldset>
   <br>
@@ -52,5 +53,6 @@
   </label>
   <input id="submit" type="submit" value="Submit">
   </form>
+  <script src="script.js"></script>
   </body>
 </html>

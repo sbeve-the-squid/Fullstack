@@ -1,15 +1,16 @@
 #image{
-    display: block;    
-    height: auto;
-    max-width: 100%;       
-    margin: 0 auto; 
-    object-fit: cover; 
+    display: block;   
+    margin: 0 auto;
+    transform: translateY(-35%) scale(1);
 }
 
 #img-div{
     text-align: center;
     display: block;
     margin: auto;
+    width: 500px;
+    height: 150px;
+    overflow: hidden;
 }
 
 img[id="link"]{

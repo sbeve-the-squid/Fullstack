@@ -97,3 +97,7 @@ img[id="link"]{
 footer {
     text-align: center;
 }
+
+.cloud{
+    display: block;
+}

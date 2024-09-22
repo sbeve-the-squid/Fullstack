@@ -1,3 +1,23 @@
+div {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#tribute-info{
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  color: #c587a6;
+  line-height: 1.5;
+}
+
+body{
+    background-color: #F3E6EA;
+}
+
 #image{
     display: block;   
     margin: 0 auto;
@@ -31,13 +51,14 @@ img[id="link"]{
     width: 200px;
     height: auto;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
 #kirby-text {
-    background: #e0f0ff; 
+    background: #bcd9f3; 
     border-radius: 30px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #kirby-inhale {
@@ -47,10 +68,10 @@ img[id="link"]{
 }
 
 #inhale-text {
-    background: #e0f0ff; 
+    background: #bcd9f3; 
     border-radius: 30px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-right: 20px;
     flex: 1;
 }
@@ -59,6 +80,7 @@ img[id="link"]{
     width: 200px;
     height: auto;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
 #playlist {
@@ -79,6 +101,7 @@ img[id="link"]{
     width: 150px;
     height: auto;
     margin: 0 10px;
+    border-radius: 10px;
 }
 
 #scratch-container {
@@ -92,10 +115,17 @@ img[id="link"]{
     width: 150px;
     height: auto;
     margin: 0 10px;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
+}
+
+#link{
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cloud{

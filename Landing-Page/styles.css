@@ -1,0 +1,152 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+}
+body{
+    padding-top: 70px;
+    background-color: #caebfd;
+}
+#header-img{
+    scale: 0.8;
+    left: 0;
+    max-width: 450px;
+    height: auto;
+    margin: 0;
+    z-index: 1;
+}
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    border-right: solid;
+    border-color: darkslategrey;
+    background-color: #0e0e1b;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    justify-content: flex-start;
+}
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+    
+}
+#nav-bar li{
+    flex-direction: row;
+    margin: 0 5px;; 
+    background-color: darkred;
+    padding: 10px 15px; 
+    border-radius: 5px;
+}
+.nav-link{
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: xxx-large;
+    color: red;
+    font-family: Gill Sans;
+    margin-bottom: -10px;
+}
+h2{
+    text-align: center;
+    font-size: smaller;
+    font-style: italic;
+}
+#bird-anatomy{
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#anatomy-text{
+    font-size: medium;
+    font-family: Times New Roman, sans-serif;
+    max-width: 600px;
+}
+
+#The_Truth{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    flex-direction: column;
+}
+
+#form {
+    margin: 30px 0;
+    text-align: center; /* Center the form */
+}
+
+#email {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: darkred;
+}
+
+.main-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#Testimonies, #Our-History, #FAQ {
+    margin: 20px 0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Testimonies{
+    background-color: #8d8d8d;
+}
+
+#Our-History{
+    background-color:#0e0e1b;
+}
+
+#FAQ{
+    background-color: darkred;
+}
+
+@media (max-width: 480px) {
+    h1{
+        margin-top: 350px;
+    }
+    #nav-bar {
+        flex-direction: column; 
+        height: auto;
+        padding: 10px;
+    }
+   #nav-bar ul {
+        flex-direction: column;
+    }
+
+    #nav-bar li {
+        margin: 10px 0; 
+    }
+
+    #header-img {
+        max-width: 200px;
+    }
+}

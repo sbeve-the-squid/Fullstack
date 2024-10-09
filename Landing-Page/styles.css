@@ -7,6 +7,7 @@
 body{
     padding-top: 70px;
     background-color: #caebfd;
+    margin: 0;
 }
 #header-img{
     scale: 0.8;
@@ -33,7 +34,7 @@ body{
 #nav-bar ul{
     list-style: none;
     display: flex;
-    
+    justify-content: space-between;
 }
 #nav-bar li{
     flex-direction: row;
@@ -76,6 +77,42 @@ h2{
     flex-direction: column;
 }
 
+#goes-both-ways{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+
+#birdwatching-container {
+    position: relative; 
+    width: 100vw; 
+    background-color: black;
+    align-content: center;
+    height: auto;
+}
+
+#birdwatching{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#overlay-text{
+    position: absolute;
+    z-index: 1;
+    width: 90vw;
+    color: #caebfd;
+    font-size: xx-large; 
+    font-family: "Sixtyfour Convergence",sans-serif;
+    text-shadow: 1px 1px #ff0000;
+    text-align: center;
+    padding: 10px;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
 #form {
     margin: 30px 0;
     text-align: center; /* Center the form */
@@ -110,9 +147,27 @@ h2{
     text-align: center;
 }
 
+#birdpoop{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+#car{
+    width: auto;
+    height: 200px;
+}
+
+#car-text{
+    font-size: x-small;
+    line-height: 1.6;
+    max-width: 55%;
+    height: fit-content;
+}
+
 #Testimonies, #Our-History, #FAQ {
     margin: 20px 0;
-    padding: 40px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

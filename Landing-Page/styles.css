@@ -30,6 +30,7 @@ body{
     flex-direction: row;
     padding: 0 20px;
     justify-content: flex-start;
+    z-index: 2;
 }
 #nav-bar ul{
     list-style: none;
@@ -108,7 +109,7 @@ h2{
     text-shadow: 1px 1px #ff0000;
     text-align: center;
     padding: 10px;
-    top: 55%; 
+    top: 60%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
@@ -149,20 +150,21 @@ h2{
 
 #birdpoop{
     display: flex;
-    justify-content: space-around;
     height: 200px;
 }
 
 #car{
     width: auto;
     height: 200px;
+    flex-shrink: 0;
 }
 
 #car-text{
-    font-size: x-small;
-    line-height: 1.6;
-    max-width: 55%;
-    height: fit-content;
+    max-height: 200px;
+    overflow-y: auto; 
+    flex-grow: 1; 
+    font-size: clamp(14px, 2vw, 26px); /* makes it so the text size can change*/
+    padding-left: 20px;
 }
 
 #Testimonies, #Our-History, #FAQ {

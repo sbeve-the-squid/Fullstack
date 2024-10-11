@@ -230,6 +230,27 @@ h2{
     animation-delay: 15s;
 }
 
+.unflock-now {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    scale: 0.8;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.unflock-now:hover {
+    background-color: darkred;
+    transform: translateY(-3px);
+}
+
 #Our-History{
     background-color:#0e0e1b;
 }
@@ -322,7 +343,7 @@ h2{
 .footer-section p, .footer-section a {
     font-size: 1em;
     margin-bottom: 8px;
-    color: #ffffff;
+    color: #708b9e;
     transition: color 0.3s ease;
     text-decoration: none;
 }
@@ -351,10 +372,14 @@ h2{
 }
 
 .footer-bottom {
-    margin-top: 30px;
     font-size: 0.9em;
     color: #8d8d8d;
 }
+
+p.details{
+    color: #708b9e;
+}
+
 
 @media (max-width: 768px) {
     .footer-content {

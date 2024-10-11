@@ -148,23 +148,49 @@ h2{
     text-align: center;
 }
 
-#birdpoop{
+.quote-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     display: flex;
-    height: 200px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
 }
 
-#car{
-    width: auto;
-    height: 200px;
+.quote-image{
+    width: 300px; 
+    max-width: 30%;
+    height: auto;
+    left: 0;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
     flex-shrink: 0;
 }
 
-#car-text{
-    max-height: 200px;
-    overflow-y: auto; 
-    flex-grow: 1; 
-    font-size: clamp(14px, 2vw, 26px); /* makes it so the text size can change*/
-    padding-left: 20px;
+.quotes{
+    font-size: clamp(0.5em, 1em, 1.2em);
+    max-width: 60%;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Gill Sans;
+}
+@keyframes slide-left {
+    0% { transform: translateX(100%); opacity: 0; }
+    5% { transform: translateX(0); opacity: 1; }
+    20% { transform: translateX(0); opacity: 1; }
+    25% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(-100%); opacity: 0; }
 }
 
 #Testimonies, #Our-History, #FAQ {
@@ -175,17 +201,171 @@ h2{
 }
 
 #Testimonies{
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #8d8d8d;
+}
+.quote-container:nth-child(1) {
+    animation: slide-left 25s infinite;
+    animation-delay: 0s;
+}
+
+.quote-container:nth-child(2) {
+    animation: slide-left 25s infinite;
+    animation-delay: 5s;
+}
+
+.quote-container:nth-child(3) {
+    animation: slide-left 25s infinite;
+    animation-delay: 10s;
+}
+
+.quote-container:nth-child(4) {
+    animation: slide-left 25s infinite;
+    animation-delay: 15s;
 }
 
 #Our-History{
     background-color:#0e0e1b;
 }
 
-#FAQ{
+#FAQ {
     background-color: darkred;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+.faq-item:hover .faq-answer {
+    display: block;
+}
+
+.faq-item:hover .faq-question {
+    visibility: hidden;
+}
+
+.faq-question {
+    display: block;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.faq-question:hover {
+    opacity: 0.6;
+}
+
+.faq-answer {
+    display: none;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bird-animation {
+    width: 32px;
+    height: 32px; 
+    background-image: url('pigeon_fiy-Sheet.png'); 
+    background-size: 224px 32px; 
+    animation: flyAway 2s steps(7) forwards; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes flyAway {
+    0% {
+        transform: translateX(0); /* Start position */
+        opacity: 1;
+        background-position: 0 0; /* First frame of the sprite */
+    }
+    100% {
+        transform: translateX(100vw); /* Move the bird to the right */
+        opacity: 0;
+        background-position: -448px 0; /* Last frame of the sprite */
+    }
+}
+.faq-item:hover .bird-animation {
+    display: block;
+    animation: flyAway 2s steps(7) forwards;
+}
+
+#footer {
+    background-color: #0e0e1b;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #8d8d8d;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #1b3a4a; 
+    text-decoration: underline;
+}
+
+.certifications {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.certifications img {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.certifications img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #8d8d8d;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
 @media (max-width: 480px) {
     h1{
         margin-top: 350px;

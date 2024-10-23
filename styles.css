@@ -55,7 +55,7 @@
 .cloud {
   position: absolute;
   top: 10px;
-  width: 80%;
+  width: 50%;
   height: 50px;
   background: transparent;
     --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;

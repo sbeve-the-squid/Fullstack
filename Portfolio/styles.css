@@ -1,0 +1,96 @@
+#introduction{
+    background: skyblue;
+    width: vw;
+    height: 200px;
+}
+#ground{
+    background: #528254;
+    width: vw;
+    height: 400px;
+}
+#sign{
+    background: #754444;
+    width: 320px;
+    height: 80px;
+    z-index: 2;
+    border-radius: 5%;
+    position: absolute;
+    right: 10%;
+    top: 13%;
+    box-shadow: 3px 2px #563a3a;
+}
+
+#pole{
+    background: #754444;
+    box-shadow: 3px 2px #563a3a;
+    width: 20px;
+    height: 120px;
+    z-index: 1;
+    border-radius: 5%;
+    position: absolute;
+    right: 31%;
+    top: 24%;
+}
+
+#name {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  top: -10%;
+  right: -3%;
+  color: lightpink;
+    
+}
+.cloud-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: linear-gradient(to bottom right, #ffffff, #d0f0fb );
+  border-radius: 10px;
+  box-shadow: 
+    10px 0 #fff, 
+    20px 10px #fff, 
+    30px 0 #fff, 
+    40px 10px #fff, 
+    50px -10px #fff;
+  image-rendering: pixelated;
+  opacity: 0.8;
+  animation: drift 20s linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.cloud:nth-child(1) {
+  top: 10px;
+  animation-duration: 25s;
+}
+.cloud:nth-child(2) {
+  top: 30px;
+  animation-duration: 30s;
+}
+.cloud:nth-child(3) {
+  top: 60px;
+  animation-duration: 35s;
+}

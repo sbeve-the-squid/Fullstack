@@ -1,3 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik Bubbles', 'Pixelify Sans', sans-serif;
+    background-color: rgb(237, 191, 230); 
+    transition: background-color 10s linear; 
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    padding:10px;
+    display: inline-block;
+    opacity: 1; 
+    position: relative;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes floatDown {
+    0% {
+        transform: translateY(-100px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+.down {
+    animation: floatDown 4s ease-out;
+}
+
+.up {
+    animation: floatUp 4s ease-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    width: 300px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+   box-shadow: 0 8px 30px rgba(73, 32, 89, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project p {
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.project a {
+    text-decoration: none;
+    color: white;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: Courier New;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.cloud-container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  top: 10px;
+  width: 50%;
+  height: 35%;
+  background: transparent;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: linear-gradient(to bottom right, #ffffff, #d0f0fb );
+  border-radius: 10px;
+  box-shadow: 
+    10px 0 #fff, 
+    20px 10px #fff, 
+    30px 0 #fff, 
+    40px 10px #fff, 
+    50px -10px #fff;
+  image-rendering: pixelated;
+  opacity: 0.8;
+  animation: drift 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.cloud:nth-child(1) {
+  top: 10px;
+  animation-duration: 25s;
+}
+.cloud:nth-child(2) {
+  top: 30px;
+  animation-duration: 30s;
+}
+.cloud:nth-child(3) {
+  top: 60px;
+  animation-duration: 35s;
+}
+
+/*
 #introduction{
     background: skyblue;
     width: vw;
@@ -151,3 +333,4 @@
         transform: translateY(-50%) scale(1); 
     }
 }
+*/

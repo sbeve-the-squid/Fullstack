@@ -1,5 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Roster</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            padding: 5px;
+            font-size: 16px;
+        }
+        #studentList {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .student-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .add-class-form {
+            margin-top: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .add-class-form input,
+        .add-class-form select,
+        .add-class-form button {
+            font-size: 14px;
+            padding: 3px;
+        }
+        #filterOptions {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Roster</h1>
+    <form id="addStudentForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <select id="grade" required>
+            <option value="">Select Grade</option>
+            <option value="9">9th</option>
+            <option value="10">10th</option>
+            <option value="11">11th</option>
+            <option value="12">12th</option>
+        </select>
+        <button type="submit">Add Student</button>
+    </form>
+    <div id="filterOptions">
+        <label>Filter by Grade:
+            <select id="gradeFilter">
+                <option value="all">All Grades</option>
+                <option value="9">9th</option>
+                <option value="10">10th</option>
+                <option value="11">11th</option>
+                <option value="12">12th</option>
+            </select>
+        </label>
+    </div>
+    <div id="studentList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +100,7 @@
         <script src="/script.js"></script>
     </body>
 </html>
+-->
 
 <!--<!DOCTYPE html>
 <html lang="en">
